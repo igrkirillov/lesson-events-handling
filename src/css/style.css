@@ -1,0 +1,35 @@
+body {
+    color: #999;
+}
+
+.area {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 400px;
+}
+
+.cell {
+    width: 25%;
+    height: 100px;
+    border: solid black;
+    border-width: 1px 0 0 1px;
+    box-sizing: border-box;
+}
+
+.cell:nth-child(n+13) {
+    border-width: 1px 0 1px 1px;
+}
+
+.cell:nth-child(4n) {
+    border-width: 1px 1px 0 1px;
+}
+
+.cell:nth-child(n+16) {
+    border-width: 1px 1px 1px 1px;
+}
+
+.cell > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
