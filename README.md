@@ -1,2 +1,2 @@
-# 2 DOM
-[![Build status](https://ci.appveyor.com/api/projects/status/qd5ajir5gkiushkx?svg=true)](https://ci.appveyor.com/project/igrkirillov/2dom-lesson)
+# 3 Events handling
+[![Build status](https://ci.appveyor.com/api/projects/status/kx8i52yqlx7wamgi?svg=true)](https://ci.appveyor.com/project/igrkirillov/lesson-events-handling)
