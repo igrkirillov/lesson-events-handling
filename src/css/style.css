@@ -2,7 +2,11 @@ body {
     color: #999;
 }
 
-.area {
+.hits {
+    color: black;
+}
+
+.board {
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;

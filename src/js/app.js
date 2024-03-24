@@ -1,7 +1,11 @@
+import Board from "./Board";
+
 let intervalId;
+let board;
 
 document.addEventListener("DOMContentLoaded", () => {
   intervalId = setInterval(moveImg, 1000);
+  board = new Board(document.querySelector(".board"));
 });
 
 function moveImg() {
