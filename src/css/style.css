@@ -2,14 +2,20 @@ body {
     color: #999;
 }
 
+.title {
+    text-align: center;
+}
+
 .hits {
     color: black;
+    text-align: center;
 }
 
 .board {
     display: flex;
     flex-wrap: wrap;
     max-width: 400px;
+    margin: auto;
 }
 
 .cell {
