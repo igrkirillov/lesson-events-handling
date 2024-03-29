@@ -16,7 +16,7 @@ export default class Cell {
     element.addEventListener('mouseenter', event => this.onCellEnter(event));
     element.addEventListener('mouseover', event => this.onCellMouseMove(event));
     element.addEventListener('mouseleave', event => this.onCellLeave(event));
-    element.addEventListener('click', event => this.onCellClick(event));
+    element.addEventListener('mousedown', event => this.onCellClick(event));
   }
 
   onCellEnter(event) {
