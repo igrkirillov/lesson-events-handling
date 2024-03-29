@@ -33,7 +33,7 @@ export default class Cell {
 
   onCellClick(event) {
     if (this.isContainGoblin()) {
-      this.board.incrementHits()
+      this.board.registerSuccess();
     }
   }
 

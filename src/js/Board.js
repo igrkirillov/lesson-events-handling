@@ -1,5 +1,6 @@
 import Cell from "./Cell";
 import Hits from "./Hits";
+import {nextStep} from "./app";
 
 export default class Board {
   constructor(element) {
@@ -15,13 +16,16 @@ export default class Board {
     }
   }
 
-  incrementHits() {
-    this.hits.increment();
-    this.hits.updateTitle();
-    if (this.hits.count >= 5) {
-      alert(`Победа! Попаданий ${this.hits.count}`);
-      this.hits.count = 0;
-      this.hits.updateTitle();
+  registerSuccess() {
+    this.hits.incrementSuccess();
+    nextStep(false);
+  }
+
+  registerSkip() {
+    this.hits.incrementSkips();
+    if (this.hits.skips >= 5) {
+      alert(`Game over!`);
+      this.hits.reset();
     }
   }
 }

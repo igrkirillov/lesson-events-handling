@@ -5,14 +5,28 @@ export default class Hits {
       element = document.querySelector(element);
     }
     this.element = element;
-    this.count = 0;
+    this.successes = 0;
+    this.skips = 0;
+    this.updateTitle();
   }
 
   updateTitle() {
-    this.element.textContent = `Попаданий ${this.count}`;
+    this.element.textContent = `Попаданий ${this.successes} Пропусков ${this.skips}`;
   }
 
-  increment() {
-    this.count += 1;
+  incrementSuccess() {
+    this.successes += 1;
+    this.updateTitle();
+  }
+
+  incrementSkips() {
+    this.skips += 1;
+    this.updateTitle();
+  }
+
+  reset() {
+    this.successes = 0;
+    this.skips = 0;
+    this.updateTitle();
   }
 }
